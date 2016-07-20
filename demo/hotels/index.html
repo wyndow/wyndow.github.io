@@ -13,6 +13,13 @@
     <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic%7CSource+Sans+Pro:400,300' rel='stylesheet'
           type='text/css'>
 
+    <script type="text/javascript" src="https://wyndow.com/libs/iframeResizer.min.js"></script>
+    <style type="text/css">
+        /* The minimum recommended width is 320px. */
+        #wyndow { width: 100%; margin: 0; padding: 0;}
+        #wyndow iframe { height:500px; border: none; width: 100%; }
+    </style>
+
     <!--[if lt IE 10]>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
@@ -215,18 +222,8 @@
 
                 <div class="divider divider-1"></div>
                 <div class="row">
-                    <div class="col-md-8">
-                        <p><span class="big-latter">G</span>et away for the holidays, choose our hotel.
-                            What distinguishes us from others?
-                            A lot of things. Our windows are overlooking the beautiful park. The hotel is located within
-                            easy walking distance of city Zoo and Madame Tussauds. The spacious rooms are decorated with
-                            traditional wooden furniture and equipped with free Wi-Fi access, flat-screen TVs and
-                            private bathrooms. In our city you can indulge in traditional afternoon tea during the day,
-                            catch up
-                            with work in the business center and taste delicious food at the best restaurant upon your
-                            choice in the evening.
-                        </p>
-                        <a href="#" class="link text-italic link-lg"> Read more</a>
+                    <div class="col-md-8" id="wyndow">
+                        <iframe width="100%" scrolling="yes" src="https://wyndow.com"></iframe>
                     </div>
                 </div>
             </div>
