@@ -7459,6 +7459,10 @@ a.icon-primary:hover {
 /*
 * @subsection   Inline List
 */
+.rd-navbar-fixed-linked .inline-list {
+  display: none;
+}
+
 .inline-list {
   -webkit-transform: translateY(-30px);
   transform: translateY(-30px);
@@ -7784,7 +7788,7 @@ section {
       padding-top: 35px; } }
   @media (min-width: 1200px) {
     .rd-navbar-wrap {
-      height: 14.4vh; } }
+      height: 24.4vh; } }
 
 .rd-navbar-wrap, .rd-navbar, .rd-navbar-brand, .rd-navbar-slogan,
 .rd-navbar-dropdown, .rd-navbar-megamenu, .rd-navbar-collapse-items,
@@ -7905,6 +7909,34 @@ section {
       -webkit-transform: rotate3d(0, 0, 1, 40deg);
       transform: rotate3d(0, 0, 1, 40deg); }
 
+.rd-navbar-brand .inline-list {
+  display: none;
+}
+
+.rd-navbar-fixed .rd-navbar-brand .inline-list {
+  display: block;
+}
+
+.rd-navbar-fixed .rd-navbar-brand .brand-name:before {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: -14px;
+  background-size: 40px 40px; 
+}
+.rd-navbar-brand .inline-list .btn-primary {
+  color: #fff;
+  padding: 2px 10px;
+  margin-top: -4px;
+}
+.rd-navbar-brand .inline-list .fl-budicons-launch-right164 {
+  font-size: 14px;
+  margin-left: 5px;  
+}
+.rd-navbar-brand .inline-list > li > a {
+  color: #000;
+}
+
 .rd-navbar-brand .brand-name {
   vertical-align: bottom;
   font-size: 32px;
@@ -7916,16 +7948,14 @@ section {
     .rd-navbar-brand .brand-name {
       color: #fff; } }
   .rd-navbar-brand .brand-name:before {
-    display: none;
-    content: url("../images/brand.png");
+    display: inline-block;
+    content: "";
+    background-image: url("../images/brand.png");
     width: 76px;
     height: 70px;
     position: relative;
     top: 37px;
-    left: -14px; }
-    @media (min-width: 768px) {
-      .rd-navbar-brand .brand-name:before {
-        display: inline-block; } }
+    left: -14px;}
 .rd-navbar-brand .brand-slogan {
   color: #fff;
   font-size: 16px;
@@ -8506,17 +8536,17 @@ html.rd-navbar-fixed-linked body {
     .rd-navbar-fixed .rd-navbar-brand .brand-name {
       display: inline-block;
       font-size: 20px;
-      line-height: 48px; }
+      line-height: 48px;
+      color: #000;
+      margin-top: -5px; }
       @media (max-width: 768px) {
         .rd-navbar-fixed .rd-navbar-brand .brand-name {
           color: #212125; } }
-      @media (max-width: 768px) {
-        .rd-navbar-fixed .rd-navbar-brand .brand-name:before {
-          display: none; } }
       .rd-navbar-fixed .rd-navbar-brand .brand-name .brand-slogan {
         display: none; }
   .rd-navbar-fixed .rd-navbar-panel {
     display: block;
+    overflow: hidden;
     position: fixed;
     left: 0;
     top: 0;
