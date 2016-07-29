@@ -17,7 +17,7 @@
     <style type="text/css">
         /* The minimum recommended width is 320px. */
         #wyndow { width: 100%; margin: 0; padding: 0;}
-        #wyndow iframe { height:500px; border: none; width: 100%; }
+        #wyndow iframe { height:400px; border: none; width: 100%; }
     </style>
 
     <!--[if lt IE 10]>
@@ -124,40 +124,23 @@
                 </div>
             </nav>
         </div>
-        <!-- END RD Navbar -->
-        <div class="bg-color-2 inset-1">
-            <div class="container  text-center  text-xl-left">
-                <div class="row">
-                    <div class="col-xl-4 z-ind bg-1">
-                        <h1 class="relative">Find hot deals
-                            and discounts</h1>
-                        <h5 class="text-light text-famaly inset-11 relative">Book a room at our hotel now and get a
-                            discount of 30%. Fruit basket, soft drinks and a huge cozy bed are waiting for you. We will
-                            do
-                            everything to make you
-                            feel at home.</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-color-1 inset-1">
+
+        <div class="bg-color-1 inset-1" style="min-height: auto;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-xl-4 bg-2 z-ind">
-                        <h2 class="relative text-center  text-xl-left">Book a room</h2>
+                    <div class="col-md-12 col-xl-4 bg-2 z-ind" style="padding:10px;">
                         <!-- RD Mailform -->
                         <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
                             <!-- RD Mailform Type -->
                             <input type="hidden" name="form-type" value="contact"/>
                             <!-- END RD Mailform Type -->
                             <fieldset class="border-none">
-                                <div class="row z-ind offset-13">
-                                    <div class="col-sm-4 col-sm-preffix-2 col-xl-preffix-0 col-xl-6 inset-13 ">
-                                        <h6>Check in</h6>
+                                <div class="row z-ind offset-13" style="justify-content: center;">
+                                    <div class="col-sm-1 col-sm-preffix-2 col-xl-preffix-0 col-xl-6 inset-13 " style="margin:0px; max-width: none; flex-basis: 20%;">
                                         <label class="line-right offset-15" data-add-placeholder data-add-icon>
                                             <input type="date"
                                                    name="date"
-                                                   data-placeholder="21 September"
+                                                   data-placeholder="Check in"
                                                    data-constraints="@NotEmpty @Date"
                                                     />
                                         </label>
@@ -165,43 +148,40 @@
                                         <div class="mfInfo"></div>
 
                                     </div>
-                                    <div class="col-sm-4 col-xl-6 prefix-5  inset-13">
-                                        <h6>Check out</h6>
+                                    <div class="col-sm-1 col-xl-6 prefix-5  inset-13"  style="margin:0px; padding-left: 10px; padding-right: 10px; max-width: none; flex-basis: 20%;">
                                         <label data-add-placeholder data-add-icon class="offset-15">
                                             <input type="date"
                                                    name="date"
-                                                   data-placeholder="6 October"
+                                                   data-placeholder="Check out"
                                                    data-constraints="@NotEmpty @Date"
                                                     />
                                         </label>
                                     </div>
-                                    <div class="col-sm-8 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16">
+                                    <div class="col-sm-1 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16" style="margin:0px; max-width: none; flex-basis: 20%;">
                                         <label data-add-placeholder data-add-icon>
                                             <input
                                                     type="text"
                                                     name="email"
-                                                    placeholder="E-mail"
+                                                    placeholder="Rooms"
                                                     data-constraints="@NotEmpty @Email"/>
                                         </label>
                                     </div>
-                                    <div class="mfInfo"></div>
+                                    <div class="col-sm-2 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16" style="margin:0px; max-width: none; flex-basis: 25%;">
+                                        <button class="btn btn-lg btn-primary fl-budicons-launch-right164 fl"
+                                                type="submit" style="padding: 12px; margin:0px;">Check Availability
+                                        </button>
+                                    </div>
                                 </div>
                             </fieldset>
-
-                            <h6 class="inset-2 offset-3 full-width text-xl-left text-center"> Do you have a <a href="#"> promotion code</a>?
-                            </h6>
-
-                            <div class="mfControls text-center  text-xl-left">
-                                <button class="btn btn-lg btn-primary fl-budicons-launch-right164 fl"
-                                        type="submit">Book Availability
-                                </button>
-                            </div>
+                            
                         </form>
                         <!-- END RD Mailform -->
                     </div>
                 </div>
             </div>
         </div>
+        
+        
 
         <!-- Swiper -->
         <div class="swiper-container swiper-slider swiper-slider-1" data-height="100vh" data-min-height="655px">
@@ -230,8 +210,20 @@
 
                 <div class="divider divider-1"></div>
                 <div class="row">
-                    <div class="" id="wyndow">
-                        <iframe width="100%" scrolling="yes" src="https://wyndow.com?_t=demo1"></iframe>
+                    <!-- END RD Navbar -->
+                    <div class="bg-color-2 inset-1">
+                        <div class="container  text-center  text-xl-left">
+                            <div class="row">
+                                <div class="col-xl-4 z-ind bg-1">
+                                    <h1 class="relative" style="font-size:22px; margin:20px;">Whatever your pleasure, you have dozens of reasons to stay here tonight</h1>
+                                    <div>
+                                        <div class="" id="wyndow">
+                                            <iframe width="100%" scrolling="yes" src="http://wyndow.com/?_t=demo1"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
