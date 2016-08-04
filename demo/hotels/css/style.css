@@ -142,6 +142,7 @@ html.boxed .page {
   max-width: 480px; }
   @media (min-width: 768px) {
     .container {
+      margin-right: 15px;
       max-width: 750px; } }
   @media (min-width: 992px) {
     .container {
@@ -7038,6 +7039,13 @@ html:not(.lt-ie10) .not-animated {
     padding-right: 20px;
     line-height: 0.40486em; }
 
+@media (max-width: 768px) {
+  .rd-mailform .btn-lg {
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+  }
+}
 .btn-xl {
   border-width: 2px;
   padding: 25px;
@@ -7779,7 +7787,7 @@ section {
   transition: none !important; }
 
 .rd-navbar-wrap {
-  padding-top: 0; }
+  padding-top: 0;  }
   @media (min-width: 769px) and (max-width: 1199px) {
     .rd-navbar-wrap {
       height: 164px; } }
@@ -7788,7 +7796,7 @@ section {
       padding-top: 35px; } }
   @media (min-width: 1200px) {
     .rd-navbar-wrap {
-      height: 24.4vh; } }
+      height: 12.4vh; } }
 
 .rd-navbar-wrap, .rd-navbar, .rd-navbar-brand, .rd-navbar-slogan,
 .rd-navbar-dropdown, .rd-navbar-megamenu, .rd-navbar-collapse-items,
@@ -7797,6 +7805,9 @@ section {
 .rd-navbar-live-search-results, .rd-navbar-search-form {
   transition: .3s all ease; }
 
+.rd-navbar-fixed-linked .rd-navbar-wrap {
+  height: 10px;
+}
 .rd-navbar-collapse-toggle {
   display: inline-block;
   position: relative;
@@ -8915,6 +8926,11 @@ html.boxed .rd-navbar--is-clone {
   color: #636363;
   opacity: 1;
   transition: .2s all ease; }
+  @media (max-width: 768px) {
+    .mfPlaceHolder {
+      padding: 8px 5px;
+    }
+  }
   *:-webkit-autofill ~ .mfPlaceHolder {
     opacity: .4; }
   .mfPlaceHolder.state-1 {
@@ -10988,3 +11004,16 @@ img.mfp-img {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 13px;
     color: #4d4d55; }
+
+@media (max-width: 480px) {
+  .rd-mailform .col-sm-1,
+  .rd-mailform .col-sm-2 {
+    margin-left: 25% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    padding: 5px !important;
+  }
+  .rd-mailform .row {
+    padding: 5px !important;
+  }
+}

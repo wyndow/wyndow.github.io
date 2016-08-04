@@ -93,46 +93,43 @@
 
         <div class="bg-color-1 inset-1" style="min-height: auto;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-xl-4 bg-2 z-ind" style="padding:10px;">
+                <div class="row" style="justify-content: flex-end;">
+                    <div class="col-md-12 col-xl-4 bg-2 z-ind checkAvForm" style="padding:10px; padding: 10px; max-width: 600px;">
                         <!-- RD Mailform -->
                         <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
                             <!-- RD Mailform Type -->
                             <input type="hidden" name="form-type" value="contact"/>
                             <!-- END RD Mailform Type -->
-                            <fieldset class="border-none">
+                            <fieldset class="border-none" class="max-width: 100%; float: right;">
                                 <div class="row z-ind offset-13" style="justify-content: center;">
-                                    <div class="col-sm-1 col-sm-preffix-2 col-xl-preffix-0 col-xl-6 inset-13 " style="margin:0px; max-width: none; flex-basis: 20%;">
+                                    <div class="col-sm-1 col-sm-preffix-2 col-xl-preffix-0 col-xl-6 inset-13 " style="margin: 0px;max-width: 125px;flex-basis: auto;width: 20%; padding: 0 5px 0 10px;">
                                         <label class="line-right offset-15" data-add-placeholder data-add-icon>
                                             <input type="date"
                                                    name="date"
                                                    data-placeholder="Check in"
-                                                   data-constraints="@NotEmpty @Date"
                                                     />
                                         </label>
 
                                         <div class="mfInfo"></div>
 
                                     </div>
-                                    <div class="col-sm-1 col-xl-6 prefix-5  inset-13"  style="margin:0px; padding-left: 10px; padding-right: 10px; max-width: none; flex-basis: 20%;">
+                                    <div class="col-sm-1 col-xl-6 prefix-5  inset-13"  style="margin: 0px;max-width: 125px;flex-basis: auto;width: 20%; padding: 0 5px;">
                                         <label data-add-placeholder data-add-icon class="offset-15">
                                             <input type="date"
                                                    name="date"
                                                    data-placeholder="Check out"
-                                                   data-constraints="@NotEmpty @Date"
                                                     />
                                         </label>
                                     </div>
-                                    <div class="col-sm-1 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16" style="margin:0px; max-width: none; flex-basis: 20%;">
+                                    <div class="col-sm-1 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16" style="margin: 0px;max-width: 125px;flex-basis: auto;width: 19%;padding: 0 5px;">
                                         <label data-add-placeholder data-add-icon>
                                             <input
                                                     type="text"
                                                     name="email"
-                                                    placeholder="Rooms"
-                                                    data-constraints="@NotEmpty @Email"/>
+                                                    placeholder="Rooms"/>
                                         </label>
                                     </div>
-                                    <div class="col-sm-2 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16" style="margin:0px; max-width: none; flex-basis: 25%;">
+                                    <div class="col-sm-2 col-sm-preffix-2 offset-3 border-none col-xl-12 col-xl-preffix-0 inset-16" style="margin:0px;max-width: 240px;flex-basis: auto;width: 40%;padding: 0 5px;">
                                         <button class="btn btn-lg btn-primary fl-budicons-launch-right164 fl"
                                                 type="submit" style="padding: 12px; margin:0px;">Check Availability
                                         </button>
