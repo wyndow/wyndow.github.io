@@ -13,12 +13,14 @@
     <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic%7CSource+Sans+Pro:400,300' rel='stylesheet'
           type='text/css'>
 
-    <script type="text/javascript" src="https://wyndow.com/libs/iframeResizer.min.js"></script>
-    <style type="text/css">
-        /* The minimum recommended width is 320px. */
-        #wyndow { width: 100%; margin: 0; padding: 0;}
-        #wyndow iframe { height:1340px; border: none; width: 100%; }
-    </style>
+    <script type="text/javascript" src="js/wyndow-embed-loader.js"></script>
+    <script>
+      wyndow.ready(function(wyndow) {
+        wyndow.embed.app(document.getElementById('wyndow'), {
+          theme: 'demo1'
+        });
+      });
+    </script>
 
     <!--[if lt IE 10]>
     <script src="js/html5shiv.min.js"></script>
@@ -101,9 +103,7 @@
             <div class="container text-center text-md-left">
                 <h2>Experience Our City</h2>
                 <p style="    margin: 0;margin-bottom: 20px; color: #000">Come see what our neighborhood has to offer. Then discover and book live events, directly through our event partners.</p>
-                <div class="" id="wyndow">
-                    <iframe width="100%" scrolling="yes" src="https://wyndow.com?_t=demo1"></iframe>
-                </div>
+                <div class="" id="wyndow"><!-- Embed app lives here. --></div>
             </div>
         </section>
         <!-- END Unite people-->
