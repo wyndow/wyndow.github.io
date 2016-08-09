@@ -10905,12 +10905,17 @@ img.mfp-img {
       min-height: 100vh; } }
   .page-header:before {
     background-color: inherit; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .page-header:before {
+        background-image: url(../images/swiper_1.jpg);
+      }
+    }
     @media (min-width: 480px) {
       .page-header:before {
         content: '';
         background-color: #212125;
         position: absolute;
-        bottom: 30%;
+        bottom: 0%;
         left: 0;
         right: 0;
         top: 0; } }
