@@ -10904,6 +10904,9 @@ img.mfp-img {
     left: 0;
     right: 0;
     top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url(../images/swiper_1.jpg); }
   @media (min-width: 768px) {
     .page-header {
