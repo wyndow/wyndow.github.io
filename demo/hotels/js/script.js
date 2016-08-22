@@ -238,9 +238,6 @@ function isIE() {
                         layout: 'rd-navbar-fixed',
                         focusOnHover: false
                     },
-                    768: {
-                        layout: 'rd-navbar-fullwidth'
-                    },
                     1200: {
                         layout: o.attr("data-rd-navbar-lg").split(" ")[0],
                     }

@@ -8924,6 +8924,7 @@ html.boxed .rd-navbar--is-clone {
   @media (max-width: 768px) {
     .mfPlaceHolder {
       padding: 8px 5px;
+      font-size: 14px;
     }
   }
   *:-webkit-autofill ~ .mfPlaceHolder {
@@ -11003,7 +11004,7 @@ img.mfp-img {
     font-size: 13px;
     color: #4d4d55; }
 
-@media (max-width: 480px) {
+@media (max-width: 610px) {
   .rd-mailform .col-sm-1,
   .rd-mailform .col-sm-2 {
     margin-left: 20% !important;
@@ -11016,3 +11017,29 @@ img.mfp-img {
     padding: 5px !important;
   }
 }
+@media (max-width: 320px) {
+  .rd-mailform .col-sm-1,
+  .rd-mailform .col-sm-2 {
+    width: 70% !important;
+    max-width: 70% !important;
+  }
+}
+
+.check-form-container {
+  width: calc(100% - 60px);
+}
+  @media (max-width: 768px) {
+    .check-form-container {
+      width: calc(100% - 20px);
+    }   
+  }
+  @media (max-width: 610px) {
+    .check-form-container {
+      width: calc(100% - 10px);
+    }   
+  }
+  @media (max-width: 480px) {
+    .check-form-container {
+      width: 100%;
+    }   
+  }
