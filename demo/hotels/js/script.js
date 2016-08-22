@@ -237,9 +237,6 @@ function isIE() {
                     0: {
                         layout: 'rd-navbar-fixed',
                         focusOnHover: false
-                    },
-                    1200: {
-                        layout: o.attr("data-rd-navbar-lg").split(" ")[0],
                     }
                 },
                 onepage: {
